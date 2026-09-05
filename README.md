@@ -18,14 +18,7 @@ Below are the first five rows of the merged and cleaned dataset, and their data 
 | 412 broccoli casserole               | 306168 |        40 | 2008-05-30 00:00:00 |        5 | 2008-12-31 00:00:00 |
 | 412 broccoli casserole               | 306168 |        40 | 2008-05-30 00:00:00 |        5 | 2009-04-13 00:00:00 |
 | 412 broccoli casserole               | 306168 |        40 | 2008-05-30 00:00:00 |        5 | 2013-08-02 00:00:00 |
-### Univariate Analysis
-<iframe
-  src="assets/preparation-times.html"
-  width="800"
-  height="600"
-  frameborder="0"
-></iframe>
-The distribution of recipe preparation times is strongly skewed right, with most of the recipes only needing short preparation times. To make the distribution easier to interprte, the visualization excludes any recipes that are above the 95th percentile of preparation time as it'd stretch the scale with their extreme values. 
+
 ## Assessment of Missingness
 
 ## Hypothesis Testing
