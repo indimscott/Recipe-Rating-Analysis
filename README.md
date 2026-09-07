@@ -15,6 +15,7 @@ Next I merged the recipes dataset with the interactions dataset by matching them
 Lastly, I converted the submitted column into date time objects so that those values are stored as dates that can be used correctly in any type of time based analysis.
 
 Below are the first five rows of the merged and cleaned dataset, and their data for the most relevant columns.
+
 | name                                 |     id |   minutes | submitted           |   n_steps |   n_ingredients |   avg_rating |
 |:-------------------------------------|-------:|----------:|:--------------------|----------:|----------------:|-------------:|
 | 1 brownies in the world    best ever | 333281 |        40 | 2008-10-27 00:00:00 |        10 |               9 |            4 |
@@ -22,6 +23,7 @@ Below are the first five rows of the merged and cleaned dataset, and their data 
 | 412 broccoli casserole               | 306168 |        40 | 2008-05-30 00:00:00 |         6 |               9 |            5 |
 | millionaire pound cake               | 286009 |       120 | 2008-02-12 00:00:00 |         7 |               7 |            5 |
 | 2000 meatloaf                        | 475785 |        90 | 2012-03-06 00:00:00 |        17 |              13 |            5 |
+
 
 ### Univariate Analysis
 <iframe
@@ -42,10 +44,13 @@ The distribution of recipe preparation times is strongly skewed right, with most
 The distributions of average recipe ratings are similar for recipes that take 60 minutes or less and recipes that take more than 60 minutes. Both groups have a median rating of 5, however there are differences in the spread of ratings between the two groups. This motivates a hypothesis test to be able to determine whether or not their mean rating differ significantly.
 
 ### Interesting Aggregate
+
 | time_group           |   average_rating |   median_rating |   number_of_recipes |   average_prep_time |
 |:---------------------|-----------------:|----------------:|--------------------:|--------------------:|
 | 60 minutes or less   |          4.62931 |               5 |               60989 |             29.0833 |
 | More than 60 minutes |          4.61345 |               5 |               20184 |            360.039  |
+
+
 Recipes taking 60 minutes or less have a slightly higher average rating (4.629) than recipes taking more than 60 minutes (4.613) and both groups have a median rating of 5. Although the difference in average ratings (0.016) is small, it still motivates further testing to properly determine whether the observed difference is statistically significant. 
 
 ## Assessment of Missingness
